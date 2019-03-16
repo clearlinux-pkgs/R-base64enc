@@ -4,16 +4,16 @@
 #
 Name     : R-base64enc
 Version  : 0.1.3
-Release  : 14
+Release  : 15
 URL      : https://cran.r-project.org/src/contrib/base64enc_0.1-3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/base64enc_0.1-3.tar.gz
 Summary  : Tools for base64 encoding
 Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0
-Requires: R-base64enc-lib
+Requires: R-base64enc-lib = %{version}-%{release}
 Requires: R-png
 BuildRequires : R-png
-BuildRequires : clr-R-helpers
+BuildRequires : buildreq-R
 
 %description
 No detailed description available
@@ -34,11 +34,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1523288747
+export SOURCE_DATE_EPOCH=1552712393
 
 %install
+export SOURCE_DATE_EPOCH=1552712393
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1523288747
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -73,8 +73,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library base64enc|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  base64enc || :
 
 
 %files
@@ -99,10 +98,7 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/base64enc/help/paths.rds
 /usr/lib64/R/library/base64enc/html/00Index.html
 /usr/lib64/R/library/base64enc/html/R.css
-/usr/lib64/R/library/base64enc/libs/symbols.rds
 
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/base64enc/libs/base64enc.so
-/usr/lib64/R/library/base64enc/libs/base64enc.so.avx2
-/usr/lib64/R/library/base64enc/libs/base64enc.so.avx512
