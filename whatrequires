@@ -1,11 +1,18 @@
 # This file contains recursive sources that require this package
 R-Hmisc
 R-PKI
+R-RcmdrMisc
+R-keras
 R-leaflet
 R-manipulateWidget
 R-plotly
 R-repr
 R-rmarkdown
+R-rms
 R-sendmailR
+R-shinystan
+R-taxize
+R-tensorflow
+R-tfruns
 R-threejs
 R-vcr

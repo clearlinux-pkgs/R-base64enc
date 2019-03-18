@@ -4,14 +4,13 @@
 #
 Name     : R-base64enc
 Version  : 0.1.3
-Release  : 18
+Release  : 19
 URL      : https://cran.r-project.org/src/contrib/base64enc_0.1-3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/base64enc_0.1-3.tar.gz
 Summary  : Tools for base64 encoding
 Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0
 Requires: R-base64enc-lib = %{version}-%{release}
-Requires: R-png
 BuildRequires : R-png
 BuildRequires : buildreq-R
 
@@ -34,10 +33,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552712393
+export SOURCE_DATE_EPOCH=1552944852
 
 %install
-export SOURCE_DATE_EPOCH=1552712393
+export SOURCE_DATE_EPOCH=1552944852
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
