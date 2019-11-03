@@ -4,7 +4,7 @@
 #
 Name     : R-base64enc
 Version  : 0.1.3
-Release  : 24
+Release  : 25
 URL      : https://cran.r-project.org/src/contrib/base64enc_0.1-3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/base64enc_0.1-3.tar.gz
 Summary  : Tools for base64 encoding
