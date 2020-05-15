@@ -1,7 +1,6 @@
 # This file contains recursive sources that require this package
 R-BatchJobs
 R-Hmisc
-R-IRkernel
 R-PKI
 R-haplo.stats
 R-leaflet
@@ -9,7 +8,6 @@ R-manipulateWidget
 R-plotly
 R-repr
 R-rmarkdown
-R-rms
 R-sendmailR
 R-tfruns
 R-threejs
