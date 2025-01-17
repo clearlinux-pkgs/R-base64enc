@@ -2,11 +2,12 @@
 R-Hmisc
 R-PKI
 R-base64url
+R-bslib
 R-htmltools
-R-leaflet
 R-manipulateWidget
 R-plotly
 R-repr
+R-rgl
 R-sendmailR
 R-tfruns
 R-threejs
